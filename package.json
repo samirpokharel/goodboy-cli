@@ -1,0 +1,11 @@
+{
+  "name": "goodboy",
+  "version": "1.0.0",
+  "description": "A Comand Line Interface for Node express Application",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
