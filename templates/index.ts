@@ -61,6 +61,7 @@ export const installTemple = async ({
     dependencies: {
       "@prisma/client": "5.19.1",
       "connect-pg-simple": "^10.0.0",
+      dotenv: "^16.4.7",
       cors: "^2.8.5",
       express: "^4.19.2",
       yup: "^1.4.0",
@@ -93,5 +94,6 @@ export const installTemple = async ({
     for (const dependency in packageJson.devDependencies)
       console.log(`- ${cyan(dependency)}`);
   }
-  await install(packageManager, isOnline);
+  await install(packageManager, isOnline, ["install"]);
+  await install(packageManager, isOnline, ["prisma", "generate"]);
 };

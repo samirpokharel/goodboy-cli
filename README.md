@@ -51,9 +51,6 @@ This tool saves you time and effort by providing a well-structured foundation fo
 
 
 ### Contributions Welcome ❤️  
-Feel free to contribute by adding features, fixing bugs, or sharing ideas. Open an issue or submit a pull request to help make this project even better!  # Features Checklist ✅
-
-### Contributions Welcome ❤️  
 Feel free to contribute by adding features, fixing bugs, or sharing ideas. Open an issue or submit a pull request to help make this project even better!  
 
 ## Contribute ❤️

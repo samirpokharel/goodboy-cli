@@ -12,9 +12,10 @@ export async function install(
   /** Indicate which package manager to use. */
   packageManager: PackageManager,
   /** Indicate whether there is an active Internet connection.*/
-  isOnline: boolean
+  isOnline: boolean,
+  args: string[]
 ): Promise<void> {
-  const args: string[] = ['install']
+  // const args: string[] = args;
   if (!isOnline) {
     console.log(
       yellow('You appear to be offline.\nFalling back to the local cache.')
