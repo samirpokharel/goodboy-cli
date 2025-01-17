@@ -4,8 +4,31 @@
   "description": "A Comand Line Interface for Node express Application",
   "main": "index.ts",
   "scripts": {
+    "dev": "ncc build ./index.ts -w -o dist/",
+    "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
+    "prepublishOnly": "cd ../../ && turbo run build",
+    "build": "npm run release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "goodboy": "./dist/index.js"
+  },
+  "type": "module",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
+    "@types/node": "^22.10.7",
+    "@types/prompts": "^2.4.9",
+    "@types/validate-npm-package-name": "^4.0.2",
+    "@vercel/ncc": "^0.38.3",
+    "commander": "^13.0.0",
+    "conf": "^13.1.0",
+    "cross-spawn": "^7.0.6",
+    "fast-glob": "^3.3.3",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2",
+    "typescript": "^5.7.3",
+    "validate-npm-package-name": "^6.0.0"
+  }
 }
