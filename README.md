@@ -1,4 +1,4 @@
-# `goodby-cli` - Scalable Node.js Express Application Boilerplate 🚀
+# `goodboy-cli` - Scalable Node.js Express Application Boilerplate 🚀
 
 Kickstart your next Node.js project with **`goodboy-cli`**, inspired by `create-next-app`. This CLI tool generates a minimal, scalable, and production-ready architecture for building backend applications with **Node.js**, **Express**, and **TypeScript**.
 
@@ -21,11 +21,11 @@ npx goodboy@latest my-app
 
 Or, install globally for frequent use:  
 ```bash
-npm install -g goodby
-goodby my-app
+npm install -g goodboy
+goodboy my-app
 ```
 
-## Why Use `goodby cli`? 🤔
+## Why Use `goodboy cli`? 🤔
 
 This tool saves you time and effort by providing a well-structured foundation for building Node.js and Express applications. It eliminates the hassle of setting up configurations and allows you to focus on writing code and solving problems.
 
