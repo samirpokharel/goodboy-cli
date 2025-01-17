@@ -45,6 +45,12 @@ const program = new Command(packageJson.name)
   .usage("[directory] [options]")
   .helpOption("-h, --help", "Display this help message.")
   // .option("--ts, --typescript", "Initialize as a TypeScript project. (default)")
+  // TODO:
+  // - add option for Javascript | Typescript
+  // - database connection options( Mongodb | Postgress | MySql)
+  // - option for RestAPI | GraphQl
+  // - Dockarize 
+
   .option("--eslint", "Initialize with ESLint config.")
   .option("--src-dir", "Initialize inside a 'src/' directory.")
   .option(
