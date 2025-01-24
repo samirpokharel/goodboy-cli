@@ -57,6 +57,7 @@ export const installTemple = async ({
       dev: "ts-node-dev --poll server.ts",
       build: "rimraf ./dist && tsc",
       start: "node dist/server.js",
+      generate: "prisma generate"
     },
     dependencies: {
       "@prisma/client": "5.19.1",
@@ -95,5 +96,5 @@ export const installTemple = async ({
       console.log(`- ${cyan(dependency)}`);
   }
   await install(packageManager, isOnline, ["install"]);
-  await install(packageManager, isOnline, ["prisma", "generate"]);
+  await install(packageManager, isOnline, ["run", "generate"]);
 };

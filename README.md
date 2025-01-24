@@ -16,13 +16,13 @@ Kickstart your next Node.js project with **`goodboy-cli`**, inspired by `create-
 
 Create a new project with a single command:  
 ```bash
-npx goodboy@latest my-app
+npx goodboy-cli@1.0.0 my-app
 ```
 
 Or, install globally for frequent use:  
 ```bash
-npm install -g goodboy
-goodboy my-app
+npm install -g goodboy-cli
+goodboy-cli my-app
 ```
 
 ## Why Use `goodboy cli`? 🤔
@@ -33,8 +33,9 @@ This tool saves you time and effort by providing a well-structured foundation fo
 # Features Checklist ✅
 - [x] **Scalable Folder Structure**: Pre-configured architecture for maintainability and scalability.  
 - [x] **TypeScript Support**: Built-in TypeScript configuration for type-safe development.  
-- [ ] **Prisma ORM Integration**: Simplifies database management with Prisma.  
-- [ ] **Express Setup**: Ready-to-use Express framework.  
+- [ ] **Prisma ORM Integration**: Simplifies database management with Prisma. 
+- [ ] **Logging Support**: Built-in logging system for application events and errors.  
+- [ ] **Express Setup**: Ready-to-use Express framework. 
 - [ ] **Pre-configured Middleware**: Includes CORS, session handling, and error handling out of the box.  
 - [ ] **Environment Management**: `.env` setup for environment-specific variables.  
 - [ ] **Production Build**: Pre-configured scripts for production-ready builds.  
