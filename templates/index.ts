@@ -38,6 +38,9 @@ export const installTemple = async ({
         case "gitignore": {
           return `.${name}`;
         }
+        case "env": {
+          return `.${name}`;
+        }
         case "README-template.md": {
           return "README.md";
         }
@@ -57,7 +60,7 @@ export const installTemple = async ({
       dev: "ts-node-dev --poll server.ts",
       build: "rimraf ./dist && tsc",
       start: "node dist/server.js",
-      generate: "prisma generate"
+      generate: "prisma generate",
     },
     dependencies: {
       "@prisma/client": "5.19.1",

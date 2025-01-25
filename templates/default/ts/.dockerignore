@@ -1,0 +1,15 @@
+**/*.pyc
+**/*.pyo
+**/*.mo
+.gitignore
+
+.git
+*Dockerfile*
+*docker-compose*
+server.json
+node_modules
+Dockerfile
+db.sqlite3
+**/*.md
+.env
+dist/

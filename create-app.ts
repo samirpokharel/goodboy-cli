@@ -80,6 +80,12 @@ export async function createApp({
     // console.log();
     // console.log(cyan(`  ${packageManager} ${useYarn ? "" : "run "}generate`));
     // console.log("    Generate the prisma client");
+
+    console.log();
+
+    console.log(cyan(`docker-compose -f dev.docker-compose.yml up`));
+    console.log("   Start Developmentn Servier using docker compose");
+    
     console.log();
     console.log(cyan(`  ${packageManager} ${useYarn ? "" : "run "}dev`));
     console.log("    Starts the development server.");

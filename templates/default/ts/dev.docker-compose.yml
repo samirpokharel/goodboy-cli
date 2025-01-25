@@ -1,0 +1,43 @@
+version: "3.9"
+services:
+  backend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://${DEV_POSTGRES_USER}:${DEV_POSTGRES_PASSWORD}@db/${DEV_POSTGRES_DB}
+    volumes:
+      - ./:/app
+      - ./node_modules:/app/node_modules
+  pgadmin:
+    container_name: pg_admin
+    image: dpage/pgadmin4
+    depends_on:
+      - db
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+    ports:
+      - "5050:80"
+    volumes:
+      - ./servers.json:/pgamdin4/servers.json
+
+  db:
+    container_name: db
+    image: postgres:15.6
+    environment:
+      - POSTGRES_USER=${DEV_POSTGRES_USER}
+      - POSTGRES_PASSWORD=${DEV_POSTGRES_PASSWORD}
+      - POSTGRES_DB=${DEV_POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgress-data:/var/lib/postgresql/data
+
+volumes:
+  # backend_node_modules:
+  postgress-data:

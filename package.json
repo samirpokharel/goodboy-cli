@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Comand Line Interface for Node express Application",
   "main": "index.ts",
-   "scripts": {
+  "scripts": {
     "dev": "ncc build ./index.ts -w -o dist/",
     "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
     "build": "npm run release",

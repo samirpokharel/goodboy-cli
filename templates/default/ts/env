@@ -1,0 +1,10 @@
+# Envirnoment Variables
+
+DEV_POSTGRES_USER="root"
+DEV_POSTGRES_PASSWORD="root123"
+DEV_POSTGRES_DB="database"
+
+PORT=5000
+
+PGADMIN_DEFAULT_EMAIL="yourmail@mail.com"
+PGADMIN_DEFAULT_PASSWORD="admin@123"
